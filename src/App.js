@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, { useState } from 'react'
+import LoadingScreen from './Components/sections/LoadingScreen'
+import "./index.css"
+import Navbar from './Components/Navbar'
+import MobileMenu from './Components/MobileMenu'
+import Home from './Components/sections/Home'
+import About from './Components/sections/About'
+import Projects from './Components/sections/Projects'
+import Contact from './Components/sections/Contact'
+import Loading from './Components/Loading'
+const App = () => {
+    const[isLoaded,setIsLoaded]=useState(false);
+    const[menuOpen,setMenuOpen]=useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {!isLoaded && <LoadingScreen onComplete={()=>setIsLoaded(true)}/>}
+        <div className={`min-h-screen transition-opacity duration-700 ${isLoaded ? "opacity-100" :"opacity-0" } bg-black text-gray-100`}>
+          <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+          <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+          <Home></Home>
+          <About></About>
+          <Projects></Projects>
+          <Contact></Contact>
+        </div>
+    </>
+  )
 }
 
-export default App;
+export default App
