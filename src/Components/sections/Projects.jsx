@@ -30,7 +30,7 @@ const Projects = () => {
     <section id='projects'
      className='min-h-screen flex items-center justify-center'
      >
-        <div className='max-w-5xl mx-auto px-4'>
+        <div className='max-w-5xl mx-auto px-4 z-10'>
             <div className='text-center'>
             <h1 className='text-3xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center'>Projects</h1>
             <p className='p-1 px-4 text-gray-300'>A collection of my projects that showcase my skills in web Development</p>

@@ -42,7 +42,7 @@ const handleSend=()=>{
 };
   return (
     <section id='contact' className='min-h-screen flex items-center justify-center'>
-      <div className='max-w-5xl mx-auto px-3 py-4 shadow-[10px_20px_500px_50px_rgba(59,130,246,0.50)]'>
+      <div className='max-w-5xl z-10 mx-auto px-3 py-4 shadow-[10px_20px_500px_50px_rgba(59,130,246,0.50)]'>
         <div className='text-center'>
           <h1 className='text-3xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent mb-2'>
             Contact Me

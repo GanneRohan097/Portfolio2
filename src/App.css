@@ -1,0 +1,40 @@
+.blob-outer-container{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    inset: 0;
+    margin: auto;
+    filter: blur(100px);
+    opacity: 0.6;
+}
+.blob-inner-container{
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  min-width: 1000px;
+  overflow: hidden;
+  background-color: white;
+  transform: scale(0.7);
+}
+.blob{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    margin: auto;
+    background: conic-gradient(from 0deg,blue,black,rgb(33, 4, 107),purple,rgb(62, 62, 62),rgb(154, 30, 154));
+    animation: spin 30s linear infinite;
+    pointer-events: none;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg) scale(2);
+    }
+    100%{
+        transform: rotate(1turn) scale(2);
+    }
+    
+}
