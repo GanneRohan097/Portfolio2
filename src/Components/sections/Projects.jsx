@@ -8,22 +8,31 @@ const Projects = () => {
         {
             title:"Password Manager",
             p:"Saves Credentials",
-            logo:project
+            logo:project,
+            live:"",
+            github:""
         },
         {
             title:"Amazon clone",
             p:"Clone",
-            logo:Amazon
+            logo:Amazon,
+            live:"",
+            github:""
         },
         {
             title:"Spotify clone",
             p:"Clone",
-            logo:Spotify
+            logo:Spotify,
+            live:"https://spotify1-gt9u.vercel.app/",
+            github:"https://github.com/GanneRohan097/Spotify1"
+
         },
         {
             title:"Typing",
             p:"Clone",
-            logo:Typing
+            logo:Typing,
+            live:"",
+            github:""
         },
     ];
   return ( 
@@ -52,6 +61,7 @@ const Projects = () => {
                               <p className='text-blue-400 py-1 px-3 bg-blue-500/25 rounded-2xl mx-2 cursor-pointer hover:-translate-y-1 transition-all mb-1'>Javascript</p>
                           </div>
                         <div className="flex gap-4 mt-6">
+                        <a href={item.live} target='blank'>
                         <button
                             className="px-5 py-2 rounded-lg 
                                     bg-blue-500 text-black font-medium
@@ -61,7 +71,8 @@ const Projects = () => {
                         >
                             Live
                         </button>
-
+                        </a>
+                       <a href={item.github} target='blank'>
                         <button
                             className="px-5 py-2 rounded-lg 
                                     border border-white/20 text-white
@@ -72,6 +83,7 @@ const Projects = () => {
                         >
                             GitHub
                         </button>
+                        </a>
                         </div>
                     </div>
                   ))}
