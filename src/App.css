@@ -26,7 +26,7 @@
     inset: 0;
     margin: auto;
     background: conic-gradient(from 0deg,blue,black,rgb(33, 4, 107),purple,rgb(62, 62, 62),rgb(154, 30, 154));
-    animation: spin 30s linear infinite;
+    animation: spin 27s linear infinite;
     pointer-events: none;
 }
 @keyframes spin {

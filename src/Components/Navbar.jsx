@@ -18,10 +18,10 @@ const Navbar = ({menuOpen,setMenuOpen}) => {
                         Home
                      </a>
                      <a href='#about' className='text-grey-300 hover:text-white transition-colors'>
-                        about
+                        About
                      </a>
                      <a href='#projects' className='text-grey-300 hover:text-white transition-colors'>
-                        projects
+                        Projects
                      </a>
                      <a href='#contact' className='text-grey-300 hover:text-white transition-colors'>
                         Contact

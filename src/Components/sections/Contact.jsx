@@ -41,8 +41,8 @@ const handleSend=()=>{
    },3000)
 };
   return (
-    <section id='contact' className='min-h-screen flex items-center justify-center'>
-      <div className='max-w-5xl z-10 mx-auto px-3 py-4 shadow-[10px_20px_500px_50px_rgba(59,130,246,0.50)]'>
+    <section id='contact' className='min-h-screen flex items-center justify-center mt-8'>
+      <div className='max-w-5xl z-10 mx-auto px-3 py-4 shadow-[10px_20px_500px_50px_rgba(59,130,246,0.50)] rounded'>
         <div className='text-center'>
           <h1 className='text-3xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent mb-2'>
             Contact Me
@@ -70,9 +70,11 @@ const handleSend=()=>{
                   <p className='text-gray-400'>rohan097</p>
                 </div>
               </div>
+              <a href='https://github.com/GanneRohan097' target='blank'>
               <button className='flex items-center mt-2 text-gray-300 bg-black border border-gray-500 pr-4 rounded'>
                 <FaGithub className='mx-2 mr-4' />View Github
               </button>
+              </a>
             </div>
 
             <div className='bg-slate-900 border border-white/20 rounded p-3'>
@@ -83,9 +85,13 @@ const handleSend=()=>{
                   <p className='text-gray-400'>rohan097</p>
                 </div>
               </div>
+              <a href='https://www.linkedin.com/in/rohan-ganne-266082318/' target='blank'>
               <button className='flex items-center mt-2 text-gray-300 bg-black border border-gray-500 pr-4 rounded'>
-                <FaGithub className='mx-2 mr-4' />View Linkedin
+                
+            <i className="devicon-linkedin-plain mx-2 mr-4"></i>
+                View Linkedin
               </button>
+              </a>
             </div>
           </div>
 
