@@ -9,6 +9,7 @@ import About from './Components/sections/About'
 import Projects from './Components/sections/Projects'
 import Contact from './Components/sections/Contact'
 import Coding from './Components/sections/Coding'
+import ScrollProgressBar from './Components/Scroll'
 
 const App = () => {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -17,7 +18,7 @@ const App = () => {
   return (
     <>
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
-
+      <ScrollProgressBar></ScrollProgressBar>
       {isLoaded && (
         <div className='blob-outer-container'>
           <div className='blob-inner-container'>
