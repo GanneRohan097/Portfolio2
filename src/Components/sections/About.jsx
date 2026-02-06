@@ -25,10 +25,17 @@ const About = () => {
                                 <span className='bg-blue-500/10 text-blue-400 py-1.5 px-4 rounded-full text-sm font-medium border border-blue-500/20 hover:bg-blue-500/20 hover:shadow-[0_2px_15px_rgba(59,130,246,0.3)] transition-all cursor-default'>
 
                                     <i class="devicon-html5-plain colored text-[40px]"></i>
-
+          
                                 </span>
                                 <span className='bg-blue-500/10 text-blue-400 py-1.5 px-4 rounded-full text-sm font-medium border border-blue-500/20 hover:bg-blue-500/20 hover:shadow-[0_2px_15px_rgba(59,130,246,0.3)] transition-all cursor-default'>
                                     <i className="devicon-css3-plain text-[40px]"></i>
+                                </span>
+                                <span className='bg-blue-500/10 text-blue-400 py-1.5 px-4 rounded-full text-sm font-medium border border-blue-500/20 hover:bg-blue-500/20 hover:shadow-[0_2px_15px_rgba(59,130,246,0.3)] transition-all cursor-default'>
+
+                                    
+                                        <i class="devicon-tailwindcss-original colored text-[40px]"></i>
+          
+          
                                 </span>
                                 <span className='bg-blue-500/10 text-blue-400 py-1.5 px-4 rounded-full text-sm font-medium border border-blue-500/20 hover:bg-blue-500/20 hover:shadow-[0_2px_15px_rgba(59,130,246,0.3)] transition-all cursor-default'>
                                     <i className="devicon-javascript-plain colored text-[40px]"></i>
@@ -43,9 +50,6 @@ const About = () => {
 
                                     <img className='w-10 h-10' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
 
-                                </span>
-                                <span className='bg-cyan-500/10 text-cyan-400 py-1.5 px-4 rounded-full text-sm font-medium border border-cyan-500/20 hover:bg-cyan-500/20 hover:shadow-[0_2px_15px_rgba(34,211,238,0.3)] transition-all cursor-default'>
-                                    <i class="devicon-cplusplus-plain text-[40px]"></i>
                                 </span>
                                 <div className='bg-cyan-500/10 text-cyan-400 py-1.5 px-4 rounded-full text-sm font-medium border border-cyan-500/20 hover:bg-cyan-500/20 hover:shadow-[0_2px_15px_rgba(34,211,238,0.3)] transition-all cursor-default'>
 
