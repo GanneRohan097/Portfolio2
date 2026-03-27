@@ -9,7 +9,7 @@ const Home = () => {
                 <span className='bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(59,130,246,0.5)]'>Rohan Ganne</span>
             </h1>
             <p className='text-gray-300 text-base md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed font-light'>
-                Computer Science undergraduate focused on problem-solving, DSA, and building practical web applications.
+                Computer Science undergraduate focused on problem-solving, DSA and building practical web applications.
             </p>
             <div className='flex flex-wrap justify-center gap-6'>
                 <a href='#projects' className='relative inline-flex h-14 w-44 items-center justify-center overflow-hidden rounded-full bg-blue-600 font-medium text-white shadow-2xl transition duration-300 hover:scale-105 hover:bg-blue-500 hover:shadow-[0_0_40px_rgba(59,130,246,0.6)]'>

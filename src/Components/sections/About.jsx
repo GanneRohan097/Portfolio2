@@ -14,7 +14,7 @@ const About = () => {
                     <p className='text-gray-300 mb-10 leading-relaxed text-base font-light relative z-10'>
                         I’m <strong className='text-white font-semibold'>Rohan</strong>, a Computer Science student focused on building strong fundamentals and real-world projects.
                         I work with C, C++, Java, Python, JavaScript, and React, and regularly practice DSA to improve problem-solving skills.
-                        Currently, I’m strengthening DSA, React, OS, and DBMS.
+                        Currently, I’m strengthening DSA, React, OS and DBMS.
                     </p>
                     
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10'>
