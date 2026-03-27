@@ -3,6 +3,8 @@ import project from "./Password.png"
 import Amazon from "./Amazon.png";
 import Spotify from "./Spotify.png";
 import Typing from "./Typing.png";
+import Youtube from "./Youtube.png";
+
 const Projects = () => {
     const list=[
         {
@@ -34,66 +36,69 @@ const Projects = () => {
             live:"https://typing1-phi.vercel.app/",
             github:"https://github.com/GanneRohan097/Typing1"
         },
+        {
+            title:"Youtube",
+            p:"Youtube clone",
+            logo:Youtube,
+            live:"https://youtube-full-clone.vercel.app/",
+            github:"https://github.com/GanneRohan097/YoutubeFullClone"
+        },
     ];
   return ( 
     <section id='projects'
-     className='min-h-screen flex items-center justify-center'
+     className='min-h-screen flex flex-col items-center justify-center py-20 relative'
      >
-        <div className='max-w-5xl mx-auto px-4 z-10'>
-            <div className='text-center'>
-            <h1 className='text-3xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center'>Projects</h1>
-            <p className='p-1 px-4 text-gray-300'>A collection of my projects that showcase my skills in web Development</p>
+        <div className='max-w-6xl mx-auto px-4 z-10 w-full'>
+            <div className='text-center mb-16'>
+                <h1 className='text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500 bg-clip-text text-transparent mb-4 drop-shadow-sm'>
+                    Featured Projects
+                </h1>
+                <p className='text-gray-400 text-base max-w-2xl mx-auto'>
+                    A collection of my projects that showcase my skills in web development and my passion for building beautiful interfaces.
+                </p>
             </div>
-            <div className='rounded border border-white/10 items-center justify-center '>
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 shadow-md'>
-                    {list.map((item)=>(
+            
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                {list.map((item, index)=>(
+                <div key={index} className='group bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-blue-500/30 rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_8px_32px_0_rgba(59,130,246,0.2)] flex flex-col h-full'>
                         
-                   
-                    <div className='bg-white/5 backdrop-blur-md p-2 border border-white/10 hover:border-blue-500/5 rounded m-1 transition-all duration-300'>
-                         <img src={item.logo}
-                          className='w-full h-44 object-cover mb-4 border border-white/30 transition-transform duration-300 rounded-xl'></img>
-                          <h2 className='font-bold px-4 py-0'>{item.title}</h2>
-                          <p className='py-0 px-4 text-gray-400'>{item.p}</p>
-                          <div className='flex flex-wrap'>
-                              <p className='text-blue-400 py-1 px-3 bg-blue-500/25 rounded-2xl mx-2 cursor-pointer hover:-translate-y-1 transition-all mb-1'>Html</p>
-                              <p className='text-blue-400 py-1 px-3 bg-blue-500/25 rounded-2xl mx-2 cursor-pointer hover:-translate-y-1 transition-all mb-1'>CSS</p>
-                              <p className='text-blue-400 py-1 px-3 bg-blue-500/25 rounded-2xl mx-2 cursor-pointer hover:-translate-y-1 transition-all mb-1'>React</p>
-                              <p className='text-blue-400 py-1 px-3 bg-blue-500/25 rounded-2xl mx-2 cursor-pointer hover:-translate-y-1 transition-all mb-1'>Javascript</p>
-                          </div>
-                        <div className="flex gap-4 mt-6">
-                        <a href={item.live} target='blank'>
-                        <button
-                            className=" flex px-5 py-2 rounded-lg items-center
-                                    bg-blue-500 text-black font-medium
-                                    hover:bg-blue-400
-                                    hover:-translate-y-[2px]
-                                    transition-all duration-300"
-                        >
-                            <div className='rounded-full w-4 h-4 bg-red-400 mr-2 ml-0'>
-                                <div className='animate-ping rounded-full w-4 h-4 bg-white mr-2 ml-0'></div>
-                            </div>
-                            Live
-                        </button>
-                        </a>
-                       <a href={item.github} target='blank'>
-                        <button
-                            className="px-5 py-2 rounded-lg 
-                                    border border-white/20 text-white
-                                    hover:border-blue-400
-                                    hover:text-blue-400
-                                    hover:-translate-y-[2px]
-                                    transition-all duration-300"
-                        >
-                            GitHub
-                        </button>
-                        </a>
+                        <div className='overflow-hidden p-3 pb-0'>
+                            <img src={item.logo} alt={item.title}
+                                className='w-full h-52 object-cover object-top transition-transform duration-700 group-hover:scale-105 rounded-2xl border border-white/5' />
                         </div>
-                    </div>
-                  ))}
+                        
+                        <div className='p-6 flex flex-col flex-grow'>
+                            <h2 className='text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors'>{item.title}</h2>
+                            <p className='text-gray-400 text-sm mb-6 flex-grow'>{item.p}</p>
+                            
+                            <div className='flex flex-wrap gap-2 mb-6'>
+                                <span className='text-xs font-medium text-blue-300 py-1 px-3 bg-blue-500/10 rounded-full border border-blue-500/20'>Html</span>
+                                <span className='text-xs font-medium text-cyan-300 py-1 px-3 bg-cyan-500/10 rounded-full border border-cyan-500/20'>CSS</span>
+                                <span className='text-xs font-medium text-purple-300 py-1 px-3 bg-purple-500/10 rounded-full border border-purple-500/20'>React</span>
+                                <span className='text-xs font-medium text-yellow-300 py-1 px-3 bg-yellow-500/10 rounded-full border border-yellow-500/20'>Javascript</span>
+                            </div>
+                            
+                            <div className='flex gap-4 mt-auto'>
+                                <a href={item.live} target='blank' className='flex-1'>
+                                    <button className="w-full flex justify-center items-center gap-2 py-2.5 rounded-xl bg-blue-600/90 text-white font-medium hover:bg-blue-500 hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all duration-300">
+                                        <div className='relative flex h-3 w-3 items-center justify-center'>
+                                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                                            <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-white"></span>
+                                        </div>
+                                        Live Demo
+                                    </button>
+                                </a>
+                                <a href={item.github} target='blank' className='flex-1'>
+                                    <button className="w-full py-2.5 rounded-xl border border-white/20 text-gray-300 hover:border-gray-300 hover:text-white hover:bg-white/5 transition-all duration-300 font-medium">
+                                        GitHub
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                 </div>
+                ))}
             </div>
         </div>
-
     </section>
   )
 }

@@ -1,43 +1,72 @@
 import React from 'react'
 import { SiCodechef } from 'react-icons/si'
 import { SiCodeforces } from 'react-icons/si'
+
 const Coding = () => {
   return (
-    <section id='coding' className='min-h-screen flex items-center justify-center'>
-        <div className='z-10 flex flex-col items-center'>
-          <h1 className='mb-8 font-bold text-[30px] bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent'>Coding Profile</h1>
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
-                <div className='flex flex-col items-center w-40 border border-yellow-600 p-2 shadow-[0_0_20px_rgba(234,179,8,0.5)] rounded'>
-                    <img className='w-10 h-10 md:w-20 h-20 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/leetcode/leetcode-original.svg" />
-                    <p className='text-orange-500 ml-1 font-bold'>Leetcode</p>
-                    <h2 className='text-xl font-bold'>100+ Solved</h2>
-                    <div className='flex items-center border border-2 border-yellow-700 rounded-[15px] p-1 px-4 shadow-[0_0_20px_rgba(234,179,8,0.3)]'>
-                        <p className='text-2xl'>⭐</p>
-                        <p className='text-2xl'>1345</p>
+    <section id='coding' className='min-h-screen flex items-center justify-center py-20 relative'>
+        <div className='max-w-6xl mx-auto px-4 w-full z-10 flex flex-col items-center'>
+            <div className='text-center mb-16'>
+                <h1 className='text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500 bg-clip-text text-transparent mb-4 drop-shadow-sm'>
+                    Coding Profile
+                </h1>
+                <p className='text-gray-400 text-base max-w-2xl mx-auto'>
+                    Consistent problem solving and participation in competitive programming.
+                </p>
+            </div>
+            
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl'>
+                {/* Leetcode */}
+                <div className='group relative flex flex-col items-center p-8 bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-orange-500/50 rounded-3xl transition-all duration-500 hover:-translate-y-2'>
+                    <div className='absolute inset-0 bg-orange-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl'></div>
+                    <div className='relative z-10 flex flex-col items-center'>
+                        <div className='p-4 bg-white/5 rounded-2xl mb-6 shadow-[0_0_15px_rgba(249,115,22,0.1)] group-hover:shadow-[0_0_25px_rgba(249,115,22,0.4)] transition-all duration-500'>
+                            <img className='w-16 h-16 object-contain' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/leetcode/leetcode-original.svg" alt="Leetcode" />
+                        </div>
+                        <p className='text-orange-400 font-bold mb-2 tracking-wide uppercase text-sm'>Leetcode</p>
+                        <h2 className='text-2xl font-extrabold text-white mb-6'>100+ Solved</h2>
+                        <div className='flex items-center gap-2 bg-gradient-to-r from-orange-500/10 to-transparent border border-orange-500/30 rounded-full py-2 px-6 shadow-[0_0_15px_rgba(249,115,22,0.15)]'>
+                            <span className='text-lg'>⭐</span>
+                            <span className='text-xl font-bold text-orange-300'>1345</span>
+                        </div>
                     </div>
                 </div>
-                <div className='flex flex-col items-center w-40 border border-green-600 p-2 shadow-[0_0_20px_rgba(154,194,184,0.7)] rounded'>
-                     <SiCodechef color="#d2d3da" className='w-10 h-10 md:w-20 h-20 '/>
-                    <p className='text-green-400 ml-1 font-bold'>Codechef</p>
-                    <h2 className='text-xl font-bold'>500+ Solved</h2>
-                    <div className='flex items-center border border-2 border-green-700 rounded-[15px] p-1 px-4 shadow-[0_0_20px_rgba(154,194,184,0.5)]'>
-                        <p className='text-2xl'>⭐</p>
-                        <p className='text-2xl'>1035</p>
+
+                {/* Codechef */}
+                <div className='group relative flex flex-col items-center p-8 bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-green-500/50 rounded-3xl transition-all duration-500 hover:-translate-y-2'>
+                    <div className='absolute inset-0 bg-green-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl'></div>
+                    <div className='relative z-10 flex flex-col items-center'>
+                        <div className='p-4 bg-white/5 rounded-2xl mb-6 shadow-[0_0_15px_rgba(34,197,94,0.1)] group-hover:shadow-[0_0_25px_rgba(34,197,94,0.4)] transition-all duration-500'>
+                            <SiCodechef className='w-16 h-16 text-gray-200'/>
+                        </div>
+                        <p className='text-green-400 font-bold mb-2 tracking-wide uppercase text-sm'>Codechef</p>
+                        <h2 className='text-2xl font-extrabold text-white mb-6'>500+ Solved</h2>
+                        <div className='flex items-center gap-2 bg-gradient-to-r from-green-500/10 to-transparent border border-green-500/30 rounded-full py-2 px-6 shadow-[0_0_15px_rgba(34,197,94,0.15)]'>
+                            <span className='text-lg'>⭐</span>
+                            <span className='text-xl font-bold text-green-300'>1035</span>
+                        </div>
                     </div>
                 </div>
-                <div className='flex flex-col items-center w-40 border border-blue-500 p-2 shadow-[0_0_20px_rgba(0,0,255,0.7)] rounded'>
-                    <SiCodeforces className='w-10 h-10 md:w-20 h-20 'color="#6a1fcb" />
-                    <p className='text-white-500 ml-1 font-bold'>Codeforces</p>
-                    <h2 className='text-xl font-bold'>50+ Solved</h2>
-                    <div className='flex items-center border border-2 border-yellow-700 rounded-[15px] p-1 px-4 shadow-[0_0_20px_rgba(0,0,255,0.5)]'>
-                        <p className='text-2xl'>⭐</p>
-                        <p className='text-2xl'>345</p>
+
+                {/* Codeforces */}
+                <div className='group relative flex flex-col items-center p-8 bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-blue-500/50 rounded-3xl transition-all duration-500 hover:-translate-y-2'>
+                    <div className='absolute inset-0 bg-blue-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl'></div>
+                    <div className='relative z-10 flex flex-col items-center'>
+                        <div className='p-4 bg-white/5 rounded-2xl mb-6 shadow-[0_0_15px_rgba(59,130,246,0.1)] group-hover:shadow-[0_0_25px_rgba(59,130,246,0.4)] transition-all duration-500'>
+                            <SiCodeforces className='w-16 h-16 text-[#6a1fcb]' />
+                        </div>
+                        <p className='text-blue-400 font-bold mb-2 tracking-wide uppercase text-sm'>Codeforces</p>
+                        <h2 className='text-2xl font-extrabold text-white mb-6'>50+ Solved</h2>
+                        <div className='flex items-center gap-2 bg-gradient-to-r from-blue-500/10 to-transparent border border-blue-500/30 rounded-full py-2 px-6 shadow-[0_0_15px_rgba(59,130,246,0.15)]'>
+                            <span className='text-lg'>⭐</span>
+                            <span className='text-xl font-bold text-blue-300'>345</span>
+                        </div>
                     </div>
                 </div>
-          </div>
+            </div>
         </div>
     </section>
   )
 }
 
-export default Coding;
+export default Coding

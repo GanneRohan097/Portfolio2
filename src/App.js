@@ -10,6 +10,7 @@ import Projects from './Components/sections/Projects'
 import Contact from './Components/sections/Contact'
 import Coding from './Components/sections/Coding'
 import ScrollProgressBar from './Components/Scroll'
+import BubbleBackground from './Components/BubbleBackground'
 
 const App = () => {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -20,17 +21,20 @@ const App = () => {
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
       <ScrollProgressBar></ScrollProgressBar>
       {isLoaded && (
+        <>
+        <BubbleBackground />
         <div className='blob-outer-container'>
           <div className='blob-inner-container'>
             <div className='blob'></div>
           </div>
         </div>
+        </>
       )}
 
       <div
-        className={`min-h-screen transition-opacity duration-700 
+        className={`min-h-screen transition-opacity duration-700 relative z-10
         ${isLoaded ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events: none"} 
-        bg-black text-gray-100`}
+        bg-transparent text-gray-100`}
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
