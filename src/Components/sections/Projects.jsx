@@ -4,29 +4,41 @@ import Amazon from "./Amazon.png";
 import Spotify from "./Spotify.png";
 import Typing from "./Typing.png";
 import Youtube from "./Youtube.png";
+import location from "./location.png"
 
 const Projects = () => {
     const list=[
+        {
+            title:"Location Sharing app",
+            p:"Shares location",
+            logo:location,
+            live:"https://location-share-ten.vercel.app/",
+            github:"https://github.com/GanneRohan097/Location-share",
+            tech:["React","Node.js","MongoDB","Google Maps API"]
+        },
         {
             title:"Password Manager",
             p:"Saves Credentials",
             logo:project,
             live:"https://password-manager-hazel.vercel.app/",
-            github:"https://github.com/GanneRohan097/PasswordManager"
+            github:"https://github.com/GanneRohan097/PasswordManager",
+            tech:["HTML","React","Tailwind","Javascript"]
         },
         {
             title:"Amazon clone",
             p:"Clone",
             logo:Amazon,
             live:"https://amazon-clone-tau-swart.vercel.app/",
-            github:"https://github.com/GanneRohan097/Amazon-clone"
+            github:"https://github.com/GanneRohan097/Amazon-clone",
+             tech:["HTML","React","Tailwind","Javascript"]
         },
         {
             title:"Spotify clone",
             p:"Clone",
             logo:Spotify,
             live:"https://spotify1-gt9u.vercel.app/",
-            github:"https://github.com/GanneRohan097/Spotify1"
+            github:"https://github.com/GanneRohan097/Spotify1",
+             tech:["HTML","React","Tailwind","Javascript"]
 
         },
         {
@@ -34,14 +46,16 @@ const Projects = () => {
             p:"Typing practice",
             logo:Typing,
             live:"https://typing1-phi.vercel.app/",
-            github:"https://github.com/GanneRohan097/Typing1"
+            github:"https://github.com/GanneRohan097/Typing1",
+             tech:["HTML","React","CSS","Javascript"]
         },
         {
             title:"Youtube",
             p:"Youtube clone",
             logo:Youtube,
             live:"https://youtube-full-clone.vercel.app/",
-            github:"https://github.com/GanneRohan097/YoutubeFullClone"
+            github:"https://github.com/GanneRohan097/YoutubeFullClone",
+            tech:["React","Tailwind","Javascript","Youtube API"]
         },
     ];
   return ( 
@@ -72,10 +86,10 @@ const Projects = () => {
                             <p className='text-gray-400 text-sm mb-6 flex-grow'>{item.p}</p>
                             
                             <div className='flex flex-wrap gap-2 mb-6'>
-                                <span className='text-xs font-medium text-blue-300 py-1 px-3 bg-blue-500/10 rounded-full border border-blue-500/20'>Html</span>
-                                <span className='text-xs font-medium text-cyan-300 py-1 px-3 bg-cyan-500/10 rounded-full border border-cyan-500/20'>CSS</span>
-                                <span className='text-xs font-medium text-purple-300 py-1 px-3 bg-purple-500/10 rounded-full border border-purple-500/20'>React</span>
-                                <span className='text-xs font-medium text-yellow-300 py-1 px-3 bg-yellow-500/10 rounded-full border border-yellow-500/20'>Javascript</span>
+                                <span className='text-xs font-medium text-blue-300 py-1 px-3 bg-blue-500/10 rounded-full border border-blue-500/20'>{item.tech[0]}</span>
+                                <span className='text-xs font-medium text-cyan-300 py-1 px-3 bg-cyan-500/10 rounded-full border border-cyan-500/20'>{item.tech[1]}</span>
+                                <span className='text-xs font-medium text-purple-300 py-1 px-3 bg-purple-500/10 rounded-full border border-purple-500/20'>{item.tech[2]}</span>
+                                <span className='text-xs font-medium text-yellow-300 py-1 px-3 bg-yellow-500/10 rounded-full border border-yellow-500/20'>{item.tech[3]}</span>
                             </div>
                             
                             <div className='flex gap-4 mt-auto'>
