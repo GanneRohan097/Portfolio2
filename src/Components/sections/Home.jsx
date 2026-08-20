@@ -3,7 +3,7 @@ import me from "./My image.jpg"
 const Home = () => {
     return (
         <section id='home' className='min-h-screen flex items-center justify-center relative pt-20'>
-            <div className='text-center z-10 px-4 mr-10'>
+            <div className='text-center z-10 px-4 lg:mr-10'>
                 <h1 className='text-4xl md:text-6xl font-extrabold mb-5 tracking-tight lg:text-left'>
                     <div className='bg-gradient-to-r from-white via-blue-100 to-gray-400 bg-clip-text text-transparent'>Hi, I'm </div>
                     <span className='bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(59,130,246,0.5)]'>Rohan Ganne</span>
