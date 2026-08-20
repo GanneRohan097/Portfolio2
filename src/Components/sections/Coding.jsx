@@ -24,7 +24,7 @@ const Coding = () => {
                             <img className='w-16 h-16 object-contain' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/leetcode/leetcode-original.svg" alt="Leetcode" />
                         </div>
                         <p className='text-orange-400 font-bold mb-2 tracking-wide uppercase text-sm'>Leetcode</p>
-                        <h2 className='text-2xl font-extrabold text-white mb-6'>150+ Solved</h2>
+                        <h2 className='text-2xl font-extrabold text-white mb-6'>230+ Solved</h2>
                         <div className='flex items-center gap-2 bg-gradient-to-r from-orange-500/10 to-transparent border border-orange-500/30 rounded-full py-2 px-6 shadow-[0_0_15px_rgba(249,115,22,0.15)]'>
                             <span className='text-lg'>⭐</span>
                             <span className='text-xl font-bold text-orange-300'>1345</span>

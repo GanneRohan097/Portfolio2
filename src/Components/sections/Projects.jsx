@@ -5,9 +5,18 @@ import Spotify from "./Spotify.png";
 import Typing from "./Typing.png";
 import Youtube from "./Youtube.png";
 import location from "./location.png"
+import codecolab from "./Code colab.png"
 
 const Projects = () => {
     const list=[
+        {
+            title:"Code Collaborative ",
+            p:"Real time code editor",
+            logo:codecolab,
+            live:"https://code-colab-henna.vercel.app/",
+            github:"https://github.com/GanneRohan097/CodeColab",
+            tech:["React","Node.js","Web sockets"]
+        },
         {
             title:"Location Sharing app",
             p:"Shares location",
