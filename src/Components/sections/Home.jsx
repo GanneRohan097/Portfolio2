@@ -19,6 +19,14 @@ const Home = () => {
                     <a href='#contact' className='relative inline-flex h-14 w-44 items-center justify-center overflow-hidden rounded-full border border-blue-500/30 bg-white/5 backdrop-blur-sm font-medium text-blue-400 shadow-2xl transition duration-300 hover:scale-105 hover:border-blue-400 hover:bg-white/10 hover:text-white hover:shadow-[0_0_30px_rgba(59,130,246,0.3)]'>
                         <span className='relative'>Contact Me</span>
                     </a>
+                    <a
+                        href="/resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative inline-flex h-14 w-44 items-center justify-center overflow-hidden rounded-full border border-white bg-black font-medium text-blue-400 shadow-2xl transition duration-300 hover:scale-105 hover:border-blue-400 hover:text-white hover:shadow-[0_0_30px_rgba(59,130,246,0.3)]"
+                    >
+                        <p className="text-white">My Resume</p>
+                    </a>
                 </div>
             </div>
             <div className="relative h-96 w-96 hidden lg:block">
